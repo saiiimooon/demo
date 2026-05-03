@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Cheerdance Presentation</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Tropical Background Theme -->
+    <div class="bg-sky"></div>
+    <div class="sun"></div>
+    <div class="bird bird1">🕊️</div>
+    <div class="bird bird2">🕊️</div>
+    <div class="cloud cloud1">☁️</div>
+    <div class="cloud cloud2">☁️</div>
+    <div class="island">
+        <div class="palm-tree left-palm">🌴</div>
+        <div class="palm-tree right-palm">🌴</div>
+    </div>
+    <div class="sea"></div>
+
+    <!-- Presentation Content -->
+    <div id="presentation-deck">
+        
+        <!-- Page 1: PRAYER -->
+        <section class="slide active">
+            <div class="content">
+                <h1 class="title-main">PRAYER</h1>
+                <div class="emoji-large">🙏</div>
+            </div>
+        </section>
+
+        <!-- Page 2: ATTENDANCE -->
+        <section class="slide">
+            <div class="content">
+                <h1 class="title-main">ATTENDANCE</h1>
+                <div class="emoji-large">🙋‍♀️🙋‍♂️</div>
+            </div>
+        </section>
+
+        <!-- Page 3: REVIEW -->
+        <section class="slide">
+            <div class="content">
+                <h1 class="title-main">REVIEW</h1>
+                <div class="emoji-large">📚</div>
+            </div>
+        </section>
+
+        <!-- Page 4: SCRAMBLE WORDS -->
+        <section class="slide">
+            <div class="content">
+                <h2 class="section-header">SCRAMBLE WORDS</h2>
+                <div class="jumble-container">CABSI DCHEREANCE</div>
+                <button class="btn-primary" onclick="revealAnswer('scrambleAns', this)">REVEAL ANSWER</button>
+                <h2 id="scrambleAns" class="reveal-text hidden">BASIC CHEERDANCE</h2>
+            </div>
+        </section>
+
+        <!-- Page 5: GUESS THE PICTURE - High V -->
+        <section class="slide">
+            <div class="content">
+                <div class="title-wrapper">
+                    <button class="btn-primary" onclick="revealAnswer('title5', this)">REVEAL NAME</button>
+                    <h2 id="title5" class="move-title hidden">HIGH V</h2>
+                </div>
+                <div class="image-box"><img src="high_v.png" class="cheer-img" alt="High V"></div>
+            </div>
+        </section>
+
+        <!-- Page 6: GUESS THE PICTURE - Low V -->
+        <section class="slide">
+            <div class="content">
+                <div class="title-wrapper">
+                    <button class="btn-primary" onclick="revealAnswer('title6', this)">REVEAL NAME</button>
+                    <h2 id="title6" class="move-title hidden">LOW V</h2>
+                </div>
+                <div class="image-box"><img src="low_v.png" class="cheer-img" alt="Low V"></div>
+            </div>
+        </section>
+
+        <!-- Page 7: GUESS THE PICTURE - Clasp -->
+        <section class="slide">
+            <div class="content">
+                <div class="title-wrapper">
+                    <button class="btn-primary" onclick="revealAnswer('title7', this)">REVEAL NAME</button>
+                    <h2 id="title7" class="move-title hidden">CLASP</h2>
+                </div>
+                <div class="image-box"><img src="clasp.png" class="cheer-img" alt="Clasp"></div>
+            </div>
+        </section>
+
+        <!-- Page 8: GUESS THE PICTURE - Clap -->
+        <section class="slide">
+            <div class="content">
+                <div class="title-wrapper">
+                    <button class="btn-primary" onclick="revealAnswer('title8', this)">REVEAL NAME</button>
+                    <h2 id="title8" class="move-title hidden">CLAP</h2>
+                </div>
+                <div class="image-box"><img src="clap.png" class="cheer-img" alt="Clap"></div>
+            </div>
+        </section>
+
+
+        <!-- Page 10: EVALUATION INSTRUCTIONS -->
+        <section class="slide">
+            <div class="content eval-content">
+                <h1 class="section-header">EVALUATION</h1>
+                <p class="instruction-text"><strong>INSTRUCTION:</strong> Read each statement carefully and choose the letter of the correct answer. Write your answer on your paper.</p>
+                <div class="emoji-large">📝</div>
+            </div>
+        </section>
+
+        <!-- Page 11: EVAL Q1 -->
+        <section class="slide">
+            <div class="content eval-content">
+                <p class="question">1. Feet more than the shoulder width apart, hands down by the side in blades.</p>
+                <ul class="choices">
+                    <li>a) Cheer Stance</li>
+                    <li>b) High V</li>
+                    <li>c) Low V</li>
+                    <li>d) Clasp</li>
+                </ul>
+                <button class="btn-reveal" onclick="revealAnswer('ans1', this)">Show Answer</button>
+                <p id="ans1" class="correct-answer hidden">Answer: a) Cheer Stance</p>
+            </div>
+        </section>
+
+        <!-- Page 12: EVAL Q2 -->
+        <section class="slide">
+            <div class="content eval-content">
+                <p class="question">2. Arms extended down forming a “V”</p>
+                <ul class="choices">
+                    <li>a) Cheer Stance</li>
+                    <li>b) High V</li>
+                    <li>c) Low V</li>
+                    <li>d) Clasp</li>
+                </ul>
+                <button class="btn-reveal" onclick="revealAnswer('ans2', this)">Show Answer</button>
+                <p id="ans2" class="correct-answer hidden">Answer: c) Low V</p>
+            </div>
+        </section>
+
+        <!-- Page 13: EVAL Q3 -->
+        <section class="slide">
+            <div class="content eval-content">
+                <p class="question">3. Hands in blades, at the chin, elbows in</p>
+                <ul class="choices">
+                    <li>a) Cheer Stance</li>
+                    <li>b) High V</li>
+                    <li>c) Clap</li>
+                    <li>d) Clasp</li>
+                </ul>
+                <button class="btn-reveal" onclick="revealAnswer('ans3', this)">Show Answer</button>
+                <p id="ans3" class="correct-answer hidden">Answer: c) Clap</p>
+            </div>
+        </section>
+
+        <!-- Page 14: EVAL Q4 -->
+        <section class="slide">
+            <div class="content eval-content">
+                <p class="question">4. Hands __ at the chin, elbows in.</p>
+                <ul class="choices">
+                    <li>a) Cheer Stance</li>
+                    <li>b) High V</li>
+                    <li>c) Clap</li>
+                    <li>d) Clasp</li>
+                </ul>
+                <button class="btn-reveal" onclick="revealAnswer('ans4', this)">Show Answer</button>
+                <p id="ans4" class="correct-answer hidden">Answer: d) Clasp</p>
+            </div>
+        </section>
+
+        <!-- Page 15: EVAL Q5 -->
+        <section class="slide">
+            <div class="content eval-content">
+                <p class="question">5. Arms extended up forming a “V”, relax the shoulders.</p>
+                <ul class="choices">
+                    <li>a) Cheer Stance</li>
+                    <li>b) High V</li>
+                    <li>c) Clap</li>
+                    <li>d) Clasp</li>
+                </ul>
+                <button class="btn-reveal" onclick="revealAnswer('ans5', this)">Show Answer</button>
+                <p id="ans5" class="correct-answer hidden">Answer: b) High V</p>
+            </div>
+        </section>
+
+        <!-- Page 16: ASSIGNMENT -->
+        <section class="slide">
+            <div class="content eval-content">
+                <h1 class="section-header">ASSIGNMENT</h1>
+                <div class="assignment-box">
+                    <p><strong>Study in advance:</strong></p>
+                    <p>Research other basic arm movements and positions in cheer dance with its definition and write in ¼ sheet of paper.</p>
+                </div>
+            </div>
+        </section>
+        
+    </div>
+
+    <!-- UI Controls -->
+    <div class="ui-navigation">
+        <button class="nav-arrow" onclick="moveSlide(-1)">❮</button>
+        <span id="page-counter" class="page-counter">1 / 16</span>
+        <button class="nav-arrow" onclick="moveSlide(1)">❯</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
